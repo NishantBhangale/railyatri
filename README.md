@@ -178,6 +178,7 @@ train-booking-app/
     ├── tailwind.config.js
     ├── vite.config.js
     └── package.json
+    └── .env.example
 ```
 
 ## API reference
