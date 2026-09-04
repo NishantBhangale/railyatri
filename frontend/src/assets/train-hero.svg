@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <defs>
+    <linearGradient id="trainGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22E5EA" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#trainGlow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- speed streaks -->
+    <line x1="10" y1="160" x2="140" y2="160" opacity="0.5" />
+    <line x1="0" y1="200" x2="110" y2="200" opacity="0.35" />
+    <line x1="20" y1="240" x2="150" y2="240" opacity="0.25" />
+
+    <!-- bullet-train nose + body -->
+    <path d="M170,260 C170,220 200,190 250,190 L640,190 C700,190 740,220 760,260 L760,300 C760,320 745,335 725,335 L200,335 C180,335 165,320 165,300 Z" />
+
+    <!-- cockpit stripe -->
+    <path d="M250,190 L640,190" opacity="0.6" />
+
+    <!-- windows -->
+    <rect x="230" y="215" width="46" height="30" rx="6" />
+    <rect x="292" y="215" width="46" height="30" rx="6" />
+    <rect x="354" y="215" width="46" height="30" rx="6" />
+    <rect x="416" y="215" width="46" height="30" rx="6" />
+    <rect x="478" y="215" width="46" height="30" rx="6" />
+    <rect x="540" y="215" width="46" height="30" rx="6" />
+    <rect x="602" y="215" width="46" height="30" rx="6" />
+
+    <!-- undercarriage line -->
+    <line x1="180" y1="335" x2="745" y2="335" opacity="0.4" />
+
+    <!-- wheels -->
+    <circle cx="240" cy="360" r="18" />
+    <circle cx="360" cy="360" r="18" />
+    <circle cx="560" cy="360" r="18" />
+    <circle cx="680" cy="360" r="18" />
+
+    <!-- elevated rail -->
+    <line x1="60" y1="390" x2="850" y2="390" stroke-width="2" opacity="0.5" />
+    <line x1="60" y1="398" x2="850" y2="398" stroke-width="2" opacity="0.25" />
+  </g>
+</svg>
