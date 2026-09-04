@@ -203,5 +203,3 @@ train-booking-app/
   real.
 - The "payment" step is entirely simulated: it just checks wallet balance and
   debits it. No card details are collected or transmitted.
-- This is a good candidate to containerize (Docker Compose: api + web + postgres
-  + redis) and wire into a CI/CD pipeline as a portfolio piece.
