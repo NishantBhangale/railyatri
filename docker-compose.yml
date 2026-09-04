@@ -1,0 +1,59 @@
+services:
+  db: 
+    image: postgres:16
+    container_name: train-postgres
+    environment:
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      POSTGRES_DB: ${PGDATABASE}
+    ports:
+      - "${PGPORT}:5432"
+    volumes:
+      - train_data:/var/lib/postgresql/data
+    networks:
+      - railyatra-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER} -d ${PGDATABASE}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+  redis:
+    image: redis:7
+    container_name: train-redis
+    ports:
+      - "${REDIS_PORT}:6379"
+    networks:
+      - railyatra-net
+
+  backend:
+    build: ./backend
+    container_name: railyatri-backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "${PORT}:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - railyatra-net
+    command: sh -c "node src/db/seed.js && node src/server.js"
+  frontend:
+    build: ./frontend
+    container_name: railyatri-frontend
+    env_file:
+      - ./frontend/.env
+    ports:
+      - "${F_Port}:80"
+    depends_on:
+     - backend
+    networks:
+      - railyatra-net
+volumes:
+  train_data:
+
+networks:
+  railyatra-net:
+    name: railyatra-net
+    driver: bridge
