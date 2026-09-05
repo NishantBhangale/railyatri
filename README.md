@@ -210,6 +210,11 @@ train-booking-app/
 - The "payment" step is entirely simulated: it just checks wallet balance and
   debits it. No card details are collected or transmitted.
 
+## Proxy setup
+frontend/nginx.conf
+<proxy_pass http://railyatri-backend:5000/api/;>
+railyatri-backend - default, replace with your backend container name.
+ 
 ## Docker Compose setup
 
 ### Services
