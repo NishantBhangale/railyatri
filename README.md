@@ -368,6 +368,10 @@ Cancel Booking and Refund (Balanced added)
 
 <img width="1695" height="335" alt="image" src="https://github.com/user-attachments/assets/278ad18d-7bd0-4940-ae83-a111eb8aa571" />
 
+Add the balance in Wallet
+
+<img width="1695" height="595" alt="image" src="https://github.com/user-attachments/assets/12650eba-551f-4433-9cc6-61757a54d277" />
+
 
 
 
