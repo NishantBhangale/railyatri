@@ -185,10 +185,6 @@ train-booking-app/
     └── package.json
     └── .env.example
 ```
-## Screenshots 
-
-Homepage - Profile select
-
 
 ## API reference
 
@@ -247,6 +243,8 @@ The `db` service has a healthcheck (`pg_isready -U ${PGUSER} -d ${PGDATABASE}`, 
 `redis` has no healthcheck because the backend is designed to degrade gracefully if Redis is unavailable (caching is skipped, all reads fall through to Postgres) — a Redis startup race doesn't break anything.
 
 ### env files — three separate files, three separate jobs
+
+Run setup-env.sh to automatic placement of .env to respective folders [ . backend/ frontend/ ]
 
 There are three `.env` files in this project and they do different things:
 
@@ -340,3 +338,7 @@ Redis is **optional** — the backend starts and all routes work even if Redis i
 ```json
 { "status": "ok", "db": "connected", "redis": "connected" }
 ```
+## Screenshots 
+
+Homepage - Profile select
+
