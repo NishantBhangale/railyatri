@@ -340,5 +340,35 @@ Redis is **optional** — the backend starts and all routes work even if Redis i
 ```
 ## Screenshots 
 
-Homepage - Profile select
+Homepage - Profile Create - New
+
+<img width="1695" height="1008" alt="image" src="https://github.com/user-attachments/assets/53a6831f-239d-4184-be40-03bb968ae23e" />
+
+<img width="1695" height="1008" alt="image" src="https://github.com/user-attachments/assets/92662dd8-26a2-4f3f-8d49-02ec181b6595" />
+
+Trains List - Find Train
+
+<img width="1695" height="883" alt="image" src="https://github.com/user-attachments/assets/e96cb823-533e-45fa-a18c-da75566dcea1" />
+
+Put Source & Destination date and seat type and Book ticket
+
+<img width="1695" height="883" alt="image" src="https://github.com/user-attachments/assets/db2ab296-1303-4b83-8708-667f98553f47" />
+
+<img width="1695" height="883" alt="image" src="https://github.com/user-attachments/assets/b10680fe-d331-4991-8e06-5ce71dfaeb6b" />
+
+<img width="1695" height="883" alt="image" src="https://github.com/user-attachments/assets/abfd9086-dca2-4ca4-be7f-c92dd7f7f872" />
+
+View Bookings 
+
+<img width="1695" height="883" alt="image" src="https://github.com/user-attachments/assets/085c05fa-cd3f-4600-993c-5a13b3cc61fe" />
+
+Cancel Booking and Refund (Balanced added)
+
+<img width="1695" height="335" alt="image" src="https://github.com/user-attachments/assets/126d28fd-69f1-4694-967d-83fe32fd3c0f" />
+
+<img width="1695" height="335" alt="image" src="https://github.com/user-attachments/assets/278ad18d-7bd0-4940-ae83-a111eb8aa571" />
+
+
+
+
 
